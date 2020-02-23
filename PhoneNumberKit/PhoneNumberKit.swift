@@ -110,6 +110,11 @@ public final class PhoneNumberKit: NSObject {
         let results = self.metadataManager.territories.map { $0.codeID }
         return results
     }
+    
+    public func allCountries() -> [MetadataTerritory] {
+        let results = self.metadataManager.territories
+        return results
+    }
 
     /// Get an array of ISO 639 compliant region codes corresponding to a given country code.
     ///
